@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Clientes</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <h2>Cadastro de Clientes</h2>
+  <form id="customerForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Cellphone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="order">Pedido:</label>
+    <select id="order" name="order" required>
+      <option value="" disabled selected>Selecione o pedido</option>
+      <option value="pizza">Pizza</option>
+      <option value="Pizzas">Pizzas</option>
+      <option value="salada">Salada</option>
+      <option value="hamburguer">hamburguer</option>
+    </select>
+
+    <label for="comments">Comentários adicionais:</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+
+    <button type="submit">Enviar Cadastro</button>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
